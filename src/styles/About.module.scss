@@ -1,0 +1,328 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+
+}
+
+section {
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.section1 {
+  text-align: center;
+  justify-content: center;
+}
+
+.sectionContent {
+  max-width: 900px;
+  margin-top: -9em;
+}
+
+.AboutLogo {
+  max-width: 30vw;
+  height: 30vh;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.meImage {
+  max-width: 7vw;
+  height: 7vh;
+  margin: 4em;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.caption {
+  font-size: 1.1rem;
+  margin-top: 1em;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSide {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.rightSide {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4em;
+  margin: 0 auto;
+  display: block
+}
+
+.titleLarge {
+  font-size: 2rem;
+  text-align: center;
+  width: 24em;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4em;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  height: 14em;
+  width: 50em;
+  margin: 0 auto;
+  display: block
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.section2 .card:hover {
+  background-color: #000000;
+}
+
+
+
+
+.cardTitle {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.buttonSection2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  background-color: #aaa;
+  width: 7em;
+  margin: 0 auto;
+  display: block
+}
+
+
+
+
+
+.buttonSection2:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+
+
+
+.section2 .card {
+  position: relative;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
+}
+
+.section2 .card:hover {
+  background-color: #000000a4;
+}
+
+.cardDescription {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.717);
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .cardDescription {
+  opacity: 1;
+}
+
+
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSide {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mapContainer {
+  max-width: 100%;
+  height: 400px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.rightSide {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4em;
+  margin: 0 auto;
+  display: block
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 30em;
+  border: 2px solid #ccc;
+  border-radius: 1em;
+}
+
+.buttonSection3 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  background-color: #aaa;
+  width: 7em;
+  margin: 0 auto;
+  display: block
+}
+
+.buttonSection3:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+.icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+
+}
+
+.iconLink {
+  margin: 0 10px;
+  color: #555;
+  font-size: 2rem;
+  transition: color 0.3s;
+  flex-direction: row;
+  margin: 0 auto;
+  display: block
+}
+
+.iconLink:hover {
+  color: #000;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+
+}
+
+.input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #0d6efd;
+  outline: none;
+  border-radius: 5px;
+
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 0 5px;
+  font-size: 1rem;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input:focus+.label,
+.input:not(:placeholder-shown)+.label {
+  top: -15px;
+  left: 8px;
+  font-size: 0.8rem;
+  color: #0d6efd;
+  border-radius: 5px;
+
+}

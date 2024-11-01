@@ -1,0 +1,25 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2e13c6;
+  font-size: 3em;
+}
+
+
+@mixin body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.dark {
+  background: #111827;
+  color: #b7b9be;
+}
